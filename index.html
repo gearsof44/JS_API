@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <title></title>
 </head>
-<body>
-    <div id="main"></div>
+<body onload="chargement()">
+
+	<script type="text/javascript">
+		function chargement(){
+   		document.getElementById('chargement').style.display='none';
+   		document.getElementById('site').style.visibility='visible';
+		}
+	</script>
+
+	<div id="chargement" style="width:150px;height:50px;position:absolute;top:0;left:0;color:red;font-weight:bold;font-size:14px;background:white;">
+   		Loading ...
+	</div>
+	<div id="site">
+    <div id="main" onload="chargement()"></div><br>
     <script src="./build/application.js"></script>
+    </div>
 </body>
 </html>
