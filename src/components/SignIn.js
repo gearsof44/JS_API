@@ -62,7 +62,7 @@ class SignIn extends React.Component {
           className="btn btn-lg btn-primary btn-block"
           text="Connection"
           pendingText="Connection"
-          fulFilledText="Connection suceed"
+          fulFilledText="Connection succeed"
           rejectedText="Impossible ! Try Again"
           loadingClass="isSaving"
           fulFilledClass="btn-primary"

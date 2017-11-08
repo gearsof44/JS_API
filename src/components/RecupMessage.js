@@ -38,6 +38,9 @@ class RecupMessage extends React.Component {
     }
 
   render(){
+    this.state.messages.sort(function (b, a) {
+      return a.date.localeCompare(b.date);
+    });
     let messages = this.state.messages.map((message) => {
       //Display all messages
     return(
@@ -54,7 +57,7 @@ class RecupMessage extends React.Component {
       //Display of different states of the recuperation button
         <div className="wrapper">
           <h2 className="form-signin-heading">Liste de messages</h2>
-          <div style={{overflow: "scroll", width : "1800px", height:"500px", border: "solid 1px black" }}>
+          <div style={{overflow: "scroll", width : "1200px", height:"600px", border: "solid 1px black" }}>
           <h2>{messages}</h2>
           <br/>
           </div>
